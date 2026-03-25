@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+out/
+*.vsix
+
+# Data
+data/github_cache/
+data/vectordb/*
+!data/vectordb/.gitkeep
+data/metrics.db
+data/models/*
+!data/models/.gitkeep
+
+# Backend runtime data (SQLite + Chroma local files)
+backend/data/metrics.db
+backend/data/vectordb/*
+!backend/data/vectordb/.gitkeep
+
+# Editor scratch
+Untitled
+
+# Environment
+.env
+.DS_Store
+
+# IDE
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+*.swp
+*.swo

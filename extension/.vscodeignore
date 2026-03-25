@@ -1,0 +1,26 @@
+# Source and dev
+src/**
+.vscode/**
+.vscode-test/**
+tsconfig.json
+**/*.map
+**/*.ts
+!out/**
+
+# Docs (keep README for marketplace)
+VSCODE_EXTENSION.md
+PUBLISH.md
+
+# Git and CI
+.gitignore
+.github/**
+.git/**
+
+# Dependencies (bundled or restored on install)
+node_modules/**
+
+# Misc
+*.vsix
+.DS_Store
+*.log
+npm-debug.log*

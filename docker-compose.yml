@@ -1,0 +1,27 @@
+# CodeDecay QA — local / staging stack
+services:
+  qa-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      ENV: production
+      BACKEND_HOST: 0.0.0.0
+      BACKEND_PORT: "8000"
+      LOG_LEVEL: INFO
+      # Set in .env or override:
+      # API_SECRET_KEY: "generate-a-long-random-string"
+      # CORS_ORIGINS: "https://your-internal-tool.example"
+    env_file:
+      - .env
+    volumes:
+      - codedecay-data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+volumes:
+  codedecay-data:
