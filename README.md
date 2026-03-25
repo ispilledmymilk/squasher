@@ -1,5 +1,7 @@
 # CodeDecay QA — Production-ready code quality & pre-commit checks
 
+This repository is [**squasher**](https://github.com/ispilledmymilk/squasher): a bug-prevention / code-quality extension and API.
+
 **CodeDecay QA** is a **QA tool** for engineering teams: it scores decay risk, runs **bug-prone and AI-style pattern checks**, and supports **check-before-commit** workflows. It combines code complexity, git churn, dependencies, and vector pattern matching (RAG) into a single API plus a VS Code extension.
 
 **Production:** See [`docs/PRODUCTION.md`](docs/PRODUCTION.md) for security, Docker, auth, and health checks.
@@ -4341,6 +4343,6 @@ You now have a **complete, working, first-in-market AI product** that:
 
 ---
 
-**Your Cursor AI can now build this entire project! Just feed it this README section by section and it will create all the files.** 🚀
+---
 
-Let me know if you need any clarifications or want to extend any part!
+*End of historical implementation guide section.*
