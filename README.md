@@ -1,0 +1,2 @@
+# squasher
+Bug prevention extension 
